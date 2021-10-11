@@ -14,8 +14,8 @@
     </div>          
 </template>
 <script>
-    import axios from 'axois';
-    const WORLD_URL = "https://restcountries.com/v3.1/all";
+    import axios from 'axios';
+    const WORLD_URL = "https://restcountries.com/v3.1";
 export default {
     name: 'WorldViwer',
     data() {

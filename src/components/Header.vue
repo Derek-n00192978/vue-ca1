@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <H1>Welcome to World Viwer Information</H1>
+        <H1>Welcome to World Veiwer Information</H1>
     </div>    
 </template>
 <script>

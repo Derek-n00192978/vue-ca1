@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-  <p>Thanks for visiting today and I hope you learned something about our World Today.</p>
+  <p>Thanks for visiting, I hope you learned something about our World Today.</p>
 </div>  
 </template>
 <script>
