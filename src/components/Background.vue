@@ -1,7 +1,7 @@
 <template>
     <b-container>
         <div>
-            <p>This is my back ground</p>
+            <p></p>
         </div>    
     </b-container>    
     

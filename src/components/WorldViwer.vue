@@ -1,13 +1,14 @@
 <template>
     <div>
-        <b-card-group deck>
+        <b-card-group columns>
             <b-card
                 v-for="world in worlds"
-                :key = "world.id"
-                
-            >
+                :key = "world.name"
+                >
                 <b-card-text>
-                    <a :href="world.url" target="blank">{{world.data.name}}</a>
+                    <a :href="world.url"
+                    target="blank">{{world.name.common.official}}
+                    </a>
                 </b-card-text>   
             </b-card>    
         </b-card-group>              
@@ -15,7 +16,7 @@
 </template>
 <script>
     import axios from 'axios';
-    const WORLD_URL = "https://restcountries.com/v3.1";
+    const WORLD_URL = "https://restcountries.com/v3.1/all";
 export default {
     name: 'WorldViwer',
     data() {
@@ -24,10 +25,10 @@ export default {
         };        
     },
     mounted() {
-        axios.get(`${WORLD_URL}/all`)
+        axios.get(`${WORLD_URL}`)
              .then(response => {
-                 console.log(response.data.name)
-                 this.world = response.data.name
+                 console.log(response.name.common.offical)
+                 this.world = response.name.common.offical
              })
     },
     methods: {
