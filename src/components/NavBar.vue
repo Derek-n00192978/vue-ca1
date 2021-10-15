@@ -1,28 +1,44 @@
 <template>
-    <div class="navbar">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
+    <div class="navbar" id="topnav">          
+            <router-link :to="{name: 'home'}">Home</router-link> 
+            <router-link :to="{name: 'about'}">About</router-link> 
+            <router-link :to="{name: 'contact'}">Contact</router-link> 
+            <router-link :to="{name: 'user'}">User</router-link> 
+        <!--<a href="#home" class="active">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        </div>
+        <a href="#about">About</a>-->        
+        <input type="text" class="float-end" v-model="term" v-on:keyup.enter="searchCountries()" />
+			<b-button class="float-end" variant="primary" @click="Countries()"
+				>Search</b-button
+			>
+        
     </div>    
     
 </template>
 <script>
+import axios from "axios";
 export default {
     name: 'NavBar',
     data() {
         return {
-
+            term: "",
         };        
     },
-    methods() {
+    methods: {
+        searchCountries() {
+			if (!this.term) {
+				alert("Please enter a search term");
+				return;
+			}
+			axios
+				.get(`https://restcountries.com/v3.1/name/${this.term}?fullText=true`)
+				.then((response) => {
+					console.log(response.data.data);
+					this.giphs = response.data.data;
+				})
+				.catch((error) => console.log(error));
+		}
         
     }
 }
