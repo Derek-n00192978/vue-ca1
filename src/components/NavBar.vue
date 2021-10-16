@@ -2,7 +2,7 @@
     <div class="navbar" id="topnav">          
             <router-link :to="{name: 'home'}">Home</router-link> 
             <router-link :to="{name: 'about'}">About</router-link> 
-            <router-link :to="{name: 'contact'}">Contact</router-link> 
+            <router-link :to="{name: 'indepth'}">Indepth</router-link> 
             <router-link :to="{name: 'user'}">User</router-link> 
         <!--<a href="#home" class="active">Home</a>
         <a href="#news">News</a>

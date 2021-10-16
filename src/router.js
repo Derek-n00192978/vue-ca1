@@ -3,7 +3,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home'
 import About from '@/pages/About'
-import Contact from '@/pages/Contact'
+import Indepth from '@/pages/Indepth'
 import User from '@/pages/User'
 
 Vue.use(Router)
@@ -13,7 +13,7 @@ export default new Router({
     base: process.env.BASE_URL,
     routes: [
         {
-            path: '/home',
+            path: '/',
             name: 'home',
             component: Home,
         },
@@ -23,9 +23,9 @@ export default new Router({
             component: About,
         },
         {
-            path: '/contact',
-            name: 'contact',
-            component: Contact,
+            path: '/indepth',
+            name: 'indepth',
+            component: Indepth,
         },
         {
             path : '/user/:id',
