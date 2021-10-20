@@ -3,11 +3,7 @@
             <router-link :to="{name: 'home'}">Home</router-link> 
             <router-link :to="{name: 'about'}">About</router-link> 
             <router-link :to="{name: 'indepth'}">Indepth</router-link> 
-            <router-link :to="{name: 'user'}">User</router-link> 
-        <!--<a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>-->        
+              
         <input type="text" class="float-end" v-model="term" v-on:keyup.enter="searchCountries()" />
 			<b-button class="float-end" variant="primary" @click="Countries()"
 				>Search</b-button

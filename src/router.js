@@ -4,7 +4,7 @@ import Router from 'vue-router'
 import Home from '@/pages/Home'
 import About from '@/pages/About'
 import Indepth from '@/pages/Indepth'
-import User from '@/pages/User'
+
 
 Vue.use(Router)
 
@@ -27,11 +27,5 @@ export default new Router({
             name: 'indepth',
             component: Indepth,
         },
-        {
-            path : '/user/:id',
-            name: 'user',
-            component: User,
-        },
-        
     ] 
 })

@@ -31,8 +31,9 @@
 <style>
     .about{
         text-align: center;
+        color:rgb(117, 247, 85);
+        margin-left: 10%;
+        margin-right: 10%;
     }
-    .about {
-        color:rgb(117, 247, 85)
-    }
+    
 </style>
