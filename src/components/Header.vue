@@ -17,7 +17,7 @@ export default {
 <style>
     .header{
         text-align: center;
-        color:rgb(5, 5, 10);
+        color:rgb(84, 170, 27);
     }
 
 </style>

@@ -1,10 +1,12 @@
 <template>    
-      <div id="app">      
+      <div id="app"> 
+          
           <Background />        
           <Header />         
           <NavBar />                         
           <router-view />                                 
-          <Footer />                
+          <Footer />  
+                     
       </div>      
   </template>
 
@@ -25,5 +27,6 @@
 </script>
 
 <style>
+ 
   
 </style>

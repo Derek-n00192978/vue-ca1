@@ -1,7 +1,7 @@
 <!--New page added on 15-10-2021-->
 <template>
     <div>       
-       <b-card-group class="p" columns>
+       <b-card-group class="a" columns>
            <b-card> 
                <b-card-text>    
                     <CountryViewer 
@@ -43,11 +43,19 @@ export default {
 
 <style>
 .p {
-    color: azure;
+    color: rgb(0, 250, 250);
 }
-.card {
+.a{
+    padding-left: 5%;
+    padding-right: 5%;
+    backface-visibility: hidden;
+}
+.card {    
 	margin-bottom: 2rem;
+    
+   
 }
+
 @media (min-width: 34em) {
 	.card-columns {
 		-webkit-column-count: 2;
@@ -76,5 +84,4 @@ export default {
 		column-count: 5;
 	}
 }
-
 </style>
