@@ -13,7 +13,7 @@
         </p>  
         <br>
         <p>
-            The Information on the Home page is of a Country Flag, its common Name and its Officall Name. If you click on the offical name you will be brought to a new section of the webpage where more information of that country will be displayed. From there you can click on the map link and then you will be brought to a feed from Google Maps where you will view a map of the country.
+            The Information on the Home page is of a Country Flag, its Name, its Offical Name and Capital. If you click on the name <b>(Highlighted Blue)</b> you will be brought to a new section of the webpage where more information of that country will be displayed. From there you can click on the map link and then you will be brought to a feed from Google Maps where you will view a map of the country.
         </p> 
         <br>
         <p>

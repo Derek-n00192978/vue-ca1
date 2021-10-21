@@ -34,8 +34,7 @@ export default {
                  response => {
                  console.log(response.data)
                  this.countries = response.data
-             }
-             )
+             })
              .catch(error => console.log(error))
     }
 }       

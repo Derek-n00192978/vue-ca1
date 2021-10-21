@@ -1,16 +1,9 @@
 <template>
     <div class="navbar" id="topnav">          
-            <router-link :to="{name: 'home'}">Home</router-link> 
-            <router-link :to="{name: 'about'}">About</router-link> 
-            <router-link :to="{name: 'indepth'}">Indepth</router-link> 
-              
-        <input type="text" class="float-end" v-model="term" v-on:keyup.enter="searchCountries()" />
-			<b-button class="float-end" variant="primary" @click="Countries()"
-				>Search</b-button
-			>
-        
-    </div>    
-    
+            <router-link :to="{name: 'home'}"><b>Home</b></router-link> 
+            <router-link :to="{name: 'about'}"><b>About</b></router-link> 
+            <router-link :to="{name: 'indepth'}"><b>Indepth</b></router-link>        
+         </div>    
 </template>
 <script>
 import axios from "axios";
