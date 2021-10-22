@@ -23,7 +23,7 @@ export default new Router({
             component: About,
         },
         {
-            path: '/indepth',
+            path: '/indepth/:country',
             name: 'indepth',
             component: Indepth,
         },

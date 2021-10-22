@@ -1,13 +1,11 @@
 <template>    
       <div id="app"> 
-          
           <Background />        
           <Header />         
-          <NavBar />                         
-          <router-view />                                 
+          <NavBar />        
+          <router-view />  
           <Footer />  
-                     
-      </div>      
+          </div>      
   </template>
 
 <script>
@@ -25,8 +23,12 @@
       }
     }
 </script>
+<!--21/10/2021 Masonry link -->
+
 
 <style>
- 
-  
+  body{
+    margin-left: 5%;
+    margin-right: 5%;
+  }  
 </style>

@@ -19,14 +19,7 @@ export default {
 <style>
 .footer {
   position: fixed;
-  margin-left: 5%;
-  margin-bottom: 2%;
-  padding-top: 1rem;
-  left: 0;
-  bottom: 0;
-  width: 90%;
-  background-color: rgb(99, 90, 133);
-  text-align: center;
+
   color:rgb(84, 170, 27);
 }
 </style>

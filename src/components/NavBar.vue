@@ -34,19 +34,16 @@ export default {
 </script>
 <style>
     .navbar {    
-        margin-left: 5%;
-        margin-bottom: 2%;
-        padding-top: 1rem;    
-        width: 90%;
-        background-color: rgb(99, 90, 133);
-        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;    
+        /*background-color: rgb(99, 90, 133); */
     }
-    .topnav {
+    /* .topnav {
         overflow: hidden;
-    }
+    } */
 
 /* Style the links inside the navigation bar */
-    .topnav a {
+    /* .topnav a {
         float: left;
         display: block;
         color: #f2f2f2;
@@ -54,22 +51,22 @@ export default {
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-    }
+    } */
 
 /* Change the color of links on hover */
-    .topnav a:hover {
+    /* .topnav a:hover {
         background-color: #ddd;
         color: black;
-    }
+    } */
 
 /* Add an active class to highlight the current page */
-    .topnav a.active {
+    /* .topnav a.active {
         background-color: #67328615;
         color: white;
-    }
+    } */
 
 /* Hide the link that should open and close the topnav on small screens */
-    .topnav .icon {
+    /* .topnav .icon {
         display: none;        
-    }
+    } */
 </style>

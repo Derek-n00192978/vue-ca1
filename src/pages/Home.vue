@@ -36,24 +36,25 @@ export default {
                  this.countries = response.data
              })
              .catch(error => console.log(error))
-    }
+    },
 }       
 </script>
 
 <style>
-.p {
+
+/* .p {
     color: rgb(0, 250, 250);
-}
-.a{
+} */
+/* .a{
     padding-left: 5%;
     padding-right: 5%;
     backface-visibility: hidden;
-}
-.card {    
+} */
+/* .card {    
 	margin-bottom: 2rem;
     
    
-}
+} */
 
 @media (min-width: 34em) {
 	.card-columns {

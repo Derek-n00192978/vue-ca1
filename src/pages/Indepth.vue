@@ -1,27 +1,43 @@
 <!--New page added on 14-10-2021-->
 <template>
-       <div>
-           {{ $route.params.country }}
-       </div>
+    <div>     
+         <p class="p"><b>Information on the Country {{ country.name.common }} that you Clicked on!</b></p>
+         <p class="p"><b>Official name:</b> {{ country.name.official }}</p>
+         <p class="p"><b>Capital:</b> {{ country.capital[0] }}</p>
+         <p class="p"><b>Abervation:</b> {{ country.cca3 }}</p>
+         <p class="p"><b>Currency:</b> {{ country.currencies }}</p>
+         <p class="p"><b>Land-mass:</b> {{ country.area }}ha's</p>
+         <p class="p"><b>Langitude:</b> {{ country.latlng[0] }} degrees Latitude {{ country.latlng[1] }} degrees longitude</p>
+         <p class="p"><b>Continent:</b> {{ country.continents[0] }}</p> 
+        
+          
+                  
+    </div>
 </template>
 
 <script>
+
 import axios from 'axios'
     export default {
-        name: 'Country',
+        name: 'country',
+        data() {
+        return {
+            country: []
+        }
+    }, 
         mounted(){
             axios
                 .get(`https://restcountries.com/v3.1/name/${this.$route.params.country}?fullTEXT=true`)
                 .then(response => {
                     console.log(response.data)
-                    this.countries = response.data
+                    this.country = response.data[0]
                 })
                 .catch(error => console.log(error))
         }
     }
 </script>
 
-
 <style>
+
     
 </style>
