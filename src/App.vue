@@ -27,8 +27,9 @@
 
 
 <style>
-  body{
-    margin-left: 5%;
-    margin-right: 5%;
-  }  
+  #app {
+    background-color: lightblue;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 </style>

@@ -17,9 +17,5 @@ export default {
 </script>
 
 <style>
-.footer {
-  position: fixed;
 
-  color:rgb(84, 170, 27);
-}
 </style>

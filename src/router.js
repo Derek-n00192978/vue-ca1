@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Home from '@/pages/Home'
 import About from '@/pages/About'
 import Indepth from '@/pages/Indepth'
+import Airports from '@/pages/Airports'
 
 
 Vue.use(Router)
@@ -26,6 +27,11 @@ export default new Router({
             path: '/indepth/:country',
             name: 'indepth',
             component: Indepth,
+        },
+        {
+            path: '/airports/:country',
+            name: 'airports',
+            component: Airports,
         },
     ] 
 })

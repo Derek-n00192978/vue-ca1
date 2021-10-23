@@ -15,9 +15,5 @@ export default {
 }
 </script>
 <style>
-    /* .header{
-        text-align: center;
-        color:rgb(84, 170, 27);
-    } */
-
+   
 </style>

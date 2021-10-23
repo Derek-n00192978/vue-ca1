@@ -7,9 +7,12 @@
          <p class="p"><b>Abervation:</b> {{ country.cca3 }}</p>
          <p class="p"><b>Currency:</b> {{ country.currencies }}</p>
          <p class="p"><b>Land-mass:</b> {{ country.area }}ha's</p>
-         <p class="p"><b>Langitude:</b> {{ country.latlng[0] }} degrees Latitude {{ country.latlng[1] }} degrees longitude</p>
-         <p class="p"><b>Continent:</b> {{ country.continents[0] }}</p> 
-        
+         <p class="p"><b>Langitude/Longitude:</b> {{ country.latlng[0] }} degrees Latitude {{ country.latlng[1] }} degrees longitude</p>
+         <p class="p"><b>Continent:</b> {{ country.continents[0] }}</p>
+         <p class="p"><b>Population:</b> {{ country.population }}</p>
+         <p class="p"><b>Timezone:</b> {{ country.timezones }}</p>
+         <p class="p"><b>Region:</b> {{ country.region }}</p>
+         <p class="p"><b>Languages:</b> {{ country.languages }}</p>
           
                   
     </div>
