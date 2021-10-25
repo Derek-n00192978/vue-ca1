@@ -2,6 +2,7 @@
 <template>
     <div>     
          <p class="p"><b>Information on the Country {{ country.name.common }} that you Clicked on!</b></p>
+         <p><b>Name:</b><router-link :to="{name: 'airports', params: {country: country.name.common}}"> {{ country.name.common }} </router-link></p>
          <p class="p"><b>Official name:</b> {{ country.name.official }}</p>
          <p class="p"><b>Capital:</b> {{ country.capital[0] }}</p>
          <p class="p"><b>Abervation:</b> {{ country.cca3 }}</p>
@@ -12,8 +13,7 @@
          <p class="p"><b>Population:</b> {{ country.population }}</p>
          <p class="p"><b>Timezone:</b> {{ country.timezones }}</p>
          <p class="p"><b>Region:</b> {{ country.region }}</p>
-         <p class="p"><b>Languages:</b> {{ country.languages }}</p>
-          
+         <p class="p"><b>Languages:</b> {{ country.languages }}</p>         
                   
     </div>
 </template>
