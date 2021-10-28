@@ -2,8 +2,10 @@
 <template>
     <div>     
          <p class="p"><b>Information on the Country {{ country.name.common }} that you Clicked on!</b></p>
-         <p><b>Name:</b><router-link :to="{name: 'airports', params: {country: country.name.common}}"> {{ country.name.common}}</router-link></p>
-         <p><router-link :to="{name: 'airports', params: {country: country.name.common}}"> Click here for Airports</router-link></p>
+         <button class="btn">
+         <a :href="`https://www.air-port-codes.com/airport-list/countries/${this.$route.params.country}`" target="_blank">This is a Link to all the airports in {{ country.name.common }} </a>
+         </button>
+         <p><b>Name:</b> {{ country.name.common }}</p>         
          <p class="p"><b>Official name:</b> {{ country.name.official }}</p>
          <p class="p"><b>Capital:</b> {{ country.capital[0] }}</p>
          <p class="p"><b>Abervation:</b> {{ country.cca3 }}</p>
@@ -14,7 +16,8 @@
          <p class="p"><b>Population:</b> {{ country.population }}</p>
          <p class="p"><b>Timezone:</b> {{ country.timezones }}</p>
          <p class="p"><b>Region:</b> {{ country.region }}</p>
-         <p class="p"><b>Languages:</b> {{ country.languages }}</p>         
+         <p class="p"><b>Languages:</b> {{ country.languages }}</p>    
+         <p class="p">{{ country.flags[0]}}</p>     
                   
     </div>
 </template>
@@ -42,6 +45,19 @@ import axios from 'axios'
 </script>
 
 <style>
+    .btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1}
 
     
 </style>

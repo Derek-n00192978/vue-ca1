@@ -13,7 +13,14 @@
         </p>  
         <br>
         <p>
-            The Information on the Home page is of a Country Flag, its Name, its Offical Name and Capital. If you click on the Country name <b>(Highlighted Blue)</b> you will be brought to a new section of the webpage where more information of that country will be displayed. From there you can click on the map link and then you will be brought to a feed from Google Maps where you will view a map of the country.
+            The Information on the Home page is of a Country Flag, its Name, its Offical Name and Capital. This information is displayed in a card, multiply cards are shown via the power of a for loop</p>
+        <br>
+        <p>    
+             If you click on the Country name <b>(Highlighted Blue)</b> you will be brought to a new section of the webpage where more information of that country will be displayed. This is called the "Indepth page"
+        </p> 
+        <br>
+        <p>
+            The Information shown on the "indepth" page is more information taken from the restcountriesAPI. From there you can click on the airport link and from there you will be brought to a new feed and tab that will retreve infromation about all the public Airports in that country. This information is taken from an API called "air-port-codes.com"
         </p> 
         <br>
         <p>

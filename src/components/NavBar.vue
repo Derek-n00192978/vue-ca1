@@ -3,8 +3,8 @@
         <b-nav pills>          
             <b-nav-item><router-link :to="{name: 'home'}"><b>Home</b></router-link></b-nav-item> 
             <b-nav-item><router-link :to="{name: 'about'}"><b>About</b></router-link></b-nav-item> 
-            <b-nav-item><router-link :to="{name: 'indepth'}"><b>Indepth</b></router-link></b-nav-item> 
-            <b-nav-item><router-link :to="{name: 'airports'}"><b>Airports</b></router-link></b-nav-item>
+             
+            
         </b-nav>           
     </div>    
 </template>
