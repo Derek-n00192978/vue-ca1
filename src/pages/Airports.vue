@@ -1,7 +1,7 @@
 <!--New page added on 14-10-2021-->
 <template>
     <div>            
-        <a :href="`https://air-ports-code.com/airport-list/countries/${this.$route.params.country}`">This is a Link to all the airports in </a>         
+        <a :href="`https://www.air-port-codes.com/airport-list/countries/${this.$route.params.country}`">This is a Link to all the airports in </a>         
     </div>
 </template>
 

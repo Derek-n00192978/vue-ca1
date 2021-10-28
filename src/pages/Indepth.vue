@@ -2,7 +2,8 @@
 <template>
     <div>     
          <p class="p"><b>Information on the Country {{ country.name.common }} that you Clicked on!</b></p>
-         <p><b>Name:</b><router-link :to="{name: 'airports', params: {country: country.name.common}}"> {{ country.name.common }} </router-link></p>
+         <p><b>Name:</b><router-link :to="{name: 'airports', params: {country: country.name.common}}"> {{ country.name.common}}</router-link></p>
+         <p><router-link :to="{name: 'airports', params: {country: country.name.common}}"> Click here for Airports</router-link></p>
          <p class="p"><b>Official name:</b> {{ country.name.official }}</p>
          <p class="p"><b>Capital:</b> {{ country.capital[0] }}</p>
          <p class="p"><b>Abervation:</b> {{ country.cca3 }}</p>
