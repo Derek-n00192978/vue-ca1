@@ -2,15 +2,13 @@
 <template>
     <div>       
        <b-card-group class="a" columns>
-           <b-card> 
-               <b-card-text>    
+              
                     <CountryViewer 
                     v-for="country in countries"
                     :key="country.ccn3"
                     :country="country" 
                                     />
-               </b-card-text>        
-           </b-card>
+            
        </b-card-group>     
     </div>
 </template>
@@ -56,7 +54,7 @@ export default {
    
 } */
 
-@media (min-width: 34em) {
+/* @media (min-width: 34em) {
 	.card-columns {
 		-webkit-column-count: 2;
 		-moz-column-count: 2;
@@ -83,5 +81,5 @@ export default {
 		-moz-column-count: 5;
 		column-count: 5;
 	}
-}
+} */
 </style>

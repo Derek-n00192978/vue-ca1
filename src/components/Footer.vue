@@ -18,7 +18,6 @@ export default {
 
 <style>
     .footer {
-   position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -27,5 +26,4 @@ export default {
    color: 0f0f0f;
    text-align: center;
 }
-
 </style>

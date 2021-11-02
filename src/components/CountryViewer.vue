@@ -1,6 +1,6 @@
 <template>
     <div>
-            <b-card-group deck>
+            
                 <b-card
                 header="Country Information"
                 header-text-variant="white"
@@ -11,7 +11,7 @@
                 <p><b>Offical name:</b> {{ country.name.official }}</p>
                 <p v-if="country.capital"><b>Capital:</b> {{ country.capital[0] }}</p>
                 </b-card>
-            </b-card-group>
+            
             <br>
     </div>
 </template>

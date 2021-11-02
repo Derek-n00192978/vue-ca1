@@ -1,11 +1,12 @@
 <!--New page added on 14-10-2021-->
 <template>
-    <div>     
+    <div> 
+        <div class="col-md-5">    
          <p class="p"><b>Information on the Country {{ country.name.common }} that you Clicked on!</b></p>
          <button class="btn">
          <a :href="`https://www.air-port-codes.com/airport-list/countries/${this.$route.params.country}`" target="_blank">This is a Link to all the airports in {{ country.name.common }} </a>
          </button>
-         <p><b>Name:</b> {{ country.name.common }}</p>         
+         <p><b>Name:</b> {{ country.name.common }}</p>       
          <p class="p"><b>Official name:</b> {{ country.name.official }}</p>
          <p class="p"><b>Capital:</b> {{ country.capital[0] }}</p>
          <p class="p"><b>Abervation:</b> {{ country.cca3 }}</p>
@@ -16,10 +17,12 @@
          <p class="p"><b>Population:</b> {{ country.population }}</p>
          <p class="p"><b>Timezone:</b> {{ country.timezones }}</p>
          <p class="p"><b>Region:</b> {{ country.region }}</p>
-         <p class="p"><b>Languages:</b> {{ country.languages }}</p>    
-         <p class="p">{{ country.flags[0]}}</p>     
-                  
-    </div>
+         <p class="p"><b>Languages:</b> {{ country.languages }}</p>   
+        </div>
+        <div class="col-md-3"> 
+            <img :src=" country.flags.png " alt=""> 
+        </div>
+    </div>            
 </template>
 
 <script>
