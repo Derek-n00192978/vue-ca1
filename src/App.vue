@@ -1,6 +1,5 @@
 <template>    
-      <div id="app"> 
-          <Background />        
+      <div id="app">                  
           <Header />         
           <NavBar />        
           <router-view />  
@@ -8,15 +7,13 @@
           </div>      
   </template>
 
-<script>
-    import Background from '@/components/Background.vue'
+<script>    
     import Header from '@/components/Header.vue'
     import NavBar from '@/components/NavBar.vue'    
     import Footer from '@/components/Footer.vue'
     export default {
       name: 'App',
-      components: {
-        Background,
+      components: {        
         Header,
         NavBar,          
         Footer    
