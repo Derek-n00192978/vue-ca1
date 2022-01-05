@@ -3,7 +3,7 @@
         <b-nav pills>          
             <b-nav-item><router-link :to="{name: 'home'}"><b>Home</b></router-link></b-nav-item> 
             <b-nav-item><router-link :to="{name: 'about'}"><b>About</b></router-link></b-nav-item> 
-             <input type="text" v-model="search" placeholder="SearchCountries"/>
+             <b-input v-model="searchTerm">Search</b-input>
             
         </b-nav>           
     </div>    
@@ -14,7 +14,7 @@ export default {
     name: 'NavBar',
     data() {
         return {
-           search: ''
+           searchTerm: ''
         };        
     },
     methods: {
@@ -35,48 +35,14 @@ export default {
     },
     computed: {
         filteredCountries: function(){
-            return this.term.filiter((term) => {
-                return term.title.match(this.search)
+            return this.term.filter(term => {
+                return term.name.toLowerCase().
+                includes(this.searchTerm.toLowerCase())
             });
         }
     }
 }
 </script>
 <style>
-    /* .navbar {    
-        padding-top: 1rem;
-        padding-bottom: 1rem;    
-        /*background-color: rgb(99, 90, 133); */
-    /*} */
-    /* .topnav {
-        overflow: hidden;
-    } */
-
-/* Style the links inside the navigation bar */
-    /* .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    } */
-
-/* Change the color of links on hover */
-    /* .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-    } */
-
-/* Add an active class to highlight the current page */
-    /* .topnav a.active {
-        background-color: #67328615;
-        color: white;
-    } */
-
-/* Hide the link that should open and close the topnav on small screens */
-    /* .topnav .icon {
-        display: none;        
-    } */
+   
 </style>
